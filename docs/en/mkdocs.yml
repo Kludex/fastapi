@@ -129,7 +129,7 @@ nav:
   # - documentation/concurrency.md
   - documentation/datastructures.md
   # - documentation/dependencies.md
-  # - documentation/encoders.md
+  - documentation/encoders.md
   # - documentation/exception_handlers.md
   # - documentation/exceptions.md
   # - documentation/logger.md
@@ -141,11 +141,7 @@ nav:
   # - documentation/responses.md
   # - documentation/routing.md
   # - documentation/security.md
-  # - documentation/staticfiles.md
-  # - documentation/templating.md
-  # - documentation/testclient.md
   # - documentation/utils.md
-  # - documentation/websockets.md
 - async.md
 - deployment.md
 - project-generation.md

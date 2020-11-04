@@ -89,6 +89,25 @@ async def serialize_response(
     exclude_none: bool = False,
     is_coroutine: bool = True,
 ) -> Any:
+    """[summary]
+
+    Args:
+        response_content (Any): [description]
+        field (Optional[ModelField], optional): [description]. Defaults to None.
+        include (Optional[Union[SetIntStr, DictIntStrAny]], optional): [description]. Defaults to None.
+        exclude (Optional[Union[SetIntStr, DictIntStrAny]], optional): [description]. Defaults to None.
+        by_alias (bool, optional): [description]. Defaults to True.
+        exclude_unset (bool, optional): [description]. Defaults to False.
+        exclude_defaults (bool, optional): [description]. Defaults to False.
+        exclude_none (bool, optional): [description]. Defaults to False.
+        is_coroutine (bool, optional): [description]. Defaults to True.
+
+    Raises:
+        ValidationError: [description]
+
+    Returns:
+        Any: [description]
+    """
     if field:
         errors = []
         response_content = _prepare_response_content(

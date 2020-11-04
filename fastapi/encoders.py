@@ -14,6 +14,14 @@ DictIntStrAny = Dict[Union[int, str], Any]
 def generate_encoders_by_class_tuples(
     type_encoder_map: Dict[Any, Callable]
 ) -> Dict[Callable, Tuple]:
+    """[summary]
+
+    Args:
+        type_encoder_map (Dict[Any, Callable]): [description]
+
+    Returns:
+        Dict[Callable, Tuple]: [description]
+    """
     encoders_by_class_tuples: Dict[Callable, Tuple] = defaultdict(tuple)
     for type_, encoder in type_encoder_map.items():
         encoders_by_class_tuples[encoder] += (type_,)
@@ -34,6 +42,25 @@ def jsonable_encoder(
     custom_encoder: dict = {},
     sqlalchemy_safe: bool = True,
 ) -> Any:
+    """[summary]
+
+    Args:
+        obj (Any): [description]
+        include (Optional[Union[SetIntStr, DictIntStrAny]], optional): [description]. Defaults to None.
+        exclude (Optional[Union[SetIntStr, DictIntStrAny]], optional): [description]. Defaults to None.
+        by_alias (bool, optional): [description]. Defaults to True.
+        exclude_unset (bool, optional): [description]. Defaults to False.
+        exclude_defaults (bool, optional): [description]. Defaults to False.
+        exclude_none (bool, optional): [description]. Defaults to False.
+        custom_encoder (dict, optional): [description]. Defaults to {}.
+        sqlalchemy_safe (bool, optional): [description]. Defaults to True.
+
+    Raises:
+        ValueError: [description]
+
+    Returns:
+        Any: [description]
+    """
     if include is not None and not isinstance(include, set):
         include = set(include)
     if exclude is not None and not isinstance(exclude, set):

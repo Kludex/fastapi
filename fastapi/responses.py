@@ -16,6 +16,15 @@ except ImportError:  # pragma: nocover
 
 
 class ORJSONResponse(JSONResponse):
+    """[summary]
+
+    Args:
+        JSONResponse ([type]): [description]
+
+    Returns:
+        [type]: [description]
+    """
+
     media_type = "application/json"
 
     def render(self, content: Any) -> bytes:

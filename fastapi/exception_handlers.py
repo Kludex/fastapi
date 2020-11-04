@@ -7,6 +7,15 @@ from starlette.status import HTTP_422_UNPROCESSABLE_ENTITY
 
 
 async def http_exception_handler(request: Request, exc: HTTPException) -> JSONResponse:
+    """[summary]
+
+    Args:
+        request (Request): [description]
+        exc (HTTPException): [description]
+
+    Returns:
+        JSONResponse: [description]
+    """
     headers = getattr(exc, "headers", None)
     if headers:
         return JSONResponse(
@@ -19,6 +28,15 @@ async def http_exception_handler(request: Request, exc: HTTPException) -> JSONRe
 async def request_validation_exception_handler(
     request: Request, exc: RequestValidationError
 ) -> JSONResponse:
+    """[summary]
+
+    Args:
+        request (Request): [description]
+        exc (RequestValidationError): [description]
+
+    Returns:
+        JSONResponse: [description]
+    """
     return JSONResponse(
         status_code=HTTP_422_UNPROCESSABLE_ENTITY,
         content={"detail": jsonable_encoder(exc.errors())},

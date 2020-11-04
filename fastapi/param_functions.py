@@ -19,6 +19,24 @@ def Path(  # noqa: N802
     deprecated: Optional[bool] = None,
     **extra: Any,
 ) -> Any:
+    """[summary]
+
+    Args:
+        alias (Optional[str], optional): [description]. Defaults to None.
+        title (Optional[str], optional): [description]. Defaults to None.
+        description (Optional[str], optional): [description]. Defaults to None.
+        gt (Optional[float], optional): [description]. Defaults to None.
+        ge (Optional[float], optional): [description]. Defaults to None.
+        lt (Optional[float], optional): [description]. Defaults to None.
+        le (Optional[float], optional): [description]. Defaults to None.
+        min_length (Optional[int], optional): [description]. Defaults to None.
+        max_length (Optional[int], optional): [description]. Defaults to None.
+        regex (Optional[str], optional): [description]. Defaults to None.
+        deprecated (Optional[bool], optional): [description]. Defaults to None.
+
+    Returns:
+        Any: [description]
+    """
     return params.Path(
         default=default,
         alias=alias,
@@ -52,6 +70,24 @@ def Query(  # noqa: N802
     deprecated: Optional[bool] = None,
     **extra: Any,
 ) -> Any:
+    """[summary]
+
+    Args:
+        alias (Optional[str], optional): [description]. Defaults to None.
+        title (Optional[str], optional): [description]. Defaults to None.
+        description (Optional[str], optional): [description]. Defaults to None.
+        gt (Optional[float], optional): [description]. Defaults to None.
+        ge (Optional[float], optional): [description]. Defaults to None.
+        lt (Optional[float], optional): [description]. Defaults to None.
+        le (Optional[float], optional): [description]. Defaults to None.
+        min_length (Optional[int], optional): [description]. Defaults to None.
+        max_length (Optional[int], optional): [description]. Defaults to None.
+        regex (Optional[str], optional): [description]. Defaults to None.
+        deprecated (Optional[bool], optional): [description]. Defaults to None.
+
+    Returns:
+        Any: [description]
+    """
     return params.Query(
         default,
         alias=alias,
@@ -86,6 +122,25 @@ def Header(  # noqa: N802
     deprecated: Optional[bool] = None,
     **extra: Any,
 ) -> Any:
+    """[summary]
+
+    Args:
+        alias (Optional[str], optional): [description]. Defaults to None.
+        convert_underscores (bool, optional): [description]. Defaults to True.
+        title (Optional[str], optional): [description]. Defaults to None.
+        description (Optional[str], optional): [description]. Defaults to None.
+        gt (Optional[float], optional): [description]. Defaults to None.
+        ge (Optional[float], optional): [description]. Defaults to None.
+        lt (Optional[float], optional): [description]. Defaults to None.
+        le (Optional[float], optional): [description]. Defaults to None.
+        min_length (Optional[int], optional): [description]. Defaults to None.
+        max_length (Optional[int], optional): [description]. Defaults to None.
+        regex (Optional[str], optional): [description]. Defaults to None.
+        deprecated (Optional[bool], optional): [description]. Defaults to None.
+
+    Returns:
+        Any: [description]
+    """
     return params.Header(
         default,
         alias=alias,
@@ -120,6 +175,24 @@ def Cookie(  # noqa: N802
     deprecated: Optional[bool] = None,
     **extra: Any,
 ) -> Any:
+    """[summary]
+
+    Args:
+        alias (Optional[str], optional): [description]. Defaults to None.
+        title (Optional[str], optional): [description]. Defaults to None.
+        description (Optional[str], optional): [description]. Defaults to None.
+        gt (Optional[float], optional): [description]. Defaults to None.
+        ge (Optional[float], optional): [description]. Defaults to None.
+        lt (Optional[float], optional): [description]. Defaults to None.
+        le (Optional[float], optional): [description]. Defaults to None.
+        min_length (Optional[int], optional): [description]. Defaults to None.
+        max_length (Optional[int], optional): [description]. Defaults to None.
+        regex (Optional[str], optional): [description]. Defaults to None.
+        deprecated (Optional[bool], optional): [description]. Defaults to None.
+
+    Returns:
+        Any: [description]
+    """
     return params.Cookie(
         default,
         alias=alias,
@@ -154,6 +227,25 @@ def Body(  # noqa: N802
     regex: Optional[str] = None,
     **extra: Any,
 ) -> Any:
+    """[summary]
+
+    Args:
+        embed (bool, optional): [description]. Defaults to False.
+        media_type (str, optional): [description]. Defaults to "application/json".
+        alias (Optional[str], optional): [description]. Defaults to None.
+        title (Optional[str], optional): [description]. Defaults to None.
+        description (Optional[str], optional): [description]. Defaults to None.
+        gt (Optional[float], optional): [description]. Defaults to None.
+        ge (Optional[float], optional): [description]. Defaults to None.
+        lt (Optional[float], optional): [description]. Defaults to None.
+        le (Optional[float], optional): [description]. Defaults to None.
+        min_length (Optional[int], optional): [description]. Defaults to None.
+        max_length (Optional[int], optional): [description]. Defaults to None.
+        regex (Optional[str], optional): [description]. Defaults to None.
+
+    Returns:
+        Any: [description]
+    """
     return params.Body(
         default,
         embed=embed,
@@ -188,6 +280,24 @@ def Form(  # noqa: N802
     regex: Optional[str] = None,
     **extra: Any,
 ) -> Any:
+    """[summary]
+
+    Args:
+        media_type (str, optional): [description]. Defaults to "application/x-www-form-urlencoded".
+        alias (Optional[str], optional): [description]. Defaults to None.
+        title (Optional[str], optional): [description]. Defaults to None.
+        description (Optional[str], optional): [description]. Defaults to None.
+        gt (Optional[float], optional): [description]. Defaults to None.
+        ge (Optional[float], optional): [description]. Defaults to None.
+        lt (Optional[float], optional): [description]. Defaults to None.
+        le (Optional[float], optional): [description]. Defaults to None.
+        min_length (Optional[int], optional): [description]. Defaults to None.
+        max_length (Optional[int], optional): [description]. Defaults to None.
+        regex (Optional[str], optional): [description]. Defaults to None.
+
+    Returns:
+        Any: [description]
+    """
     return params.Form(
         default,
         media_type=media_type,
@@ -221,6 +331,24 @@ def File(  # noqa: N802
     regex: Optional[str] = None,
     **extra: Any,
 ) -> Any:
+    """[summary]
+
+    Args:
+        media_type (str, optional): [description]. Defaults to "multipart/form-data".
+        alias (Optional[str], optional): [description]. Defaults to None.
+        title (Optional[str], optional): [description]. Defaults to None.
+        description (Optional[str], optional): [description]. Defaults to None.
+        gt (Optional[float], optional): [description]. Defaults to None.
+        ge (Optional[float], optional): [description]. Defaults to None.
+        lt (Optional[float], optional): [description]. Defaults to None.
+        le (Optional[float], optional): [description]. Defaults to None.
+        min_length (Optional[int], optional): [description]. Defaults to None.
+        max_length (Optional[int], optional): [description]. Defaults to None.
+        regex (Optional[str], optional): [description]. Defaults to None.
+
+    Returns:
+        Any: [description]
+    """
     return params.File(
         default,
         media_type=media_type,
@@ -241,6 +369,14 @@ def File(  # noqa: N802
 def Depends(  # noqa: N802
     dependency: Optional[Callable] = None, *, use_cache: bool = True
 ) -> Any:
+    """[summary]
+
+    Args:
+        use_cache (bool, optional): [description]. Defaults to True.
+
+    Returns:
+        Any: [description]
+    """
     return params.Depends(dependency=dependency, use_cache=use_cache)
 
 
@@ -250,4 +386,13 @@ def Security(  # noqa: N802
     scopes: Optional[Sequence[str]] = None,
     use_cache: bool = True,
 ) -> Any:
+    """[summary]
+
+    Args:
+        scopes (Optional[Sequence[str]], optional): [description]. Defaults to None.
+        use_cache (bool, optional): [description]. Defaults to True.
+
+    Returns:
+        Any: [description]
+    """
     return params.Security(dependency=dependency, scopes=scopes, use_cache=use_cache)
