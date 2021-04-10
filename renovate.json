@@ -3,5 +3,5 @@
     "config:base"
   ],
   "enabledManagers": ["poetry"],
-  "commitMessagePrefix": "⬆️"
+  "commitMessagePrefix": "⬆️" 
 }
