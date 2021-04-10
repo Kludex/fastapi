@@ -1,8 +1,5 @@
 {
   "extends": [
     "config:base"
-  ],
-  "python": {
-    "fileMatch": ["pyproject.toml"]
-  }
+  ]
 }
