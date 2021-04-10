@@ -2,5 +2,5 @@
   "extends": [
     "config:base"
   ],
-  "enableManagers": ["python"]
+  "enabledManagers": ["python"]
 }
